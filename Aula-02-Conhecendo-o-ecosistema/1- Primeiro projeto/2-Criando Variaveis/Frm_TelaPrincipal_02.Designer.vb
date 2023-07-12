@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Frm_TelaPrincipal
+Partial Class Frm_TelaPrincipal_02
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -44,14 +44,14 @@ Partial Class Frm_TelaPrincipal
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "2 - Criando variaveis"
         '
-        'Frm_TelaPrincipal
+        'Frm_TelaPrincipal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btm_Principal)
-        Me.Name = "Frm_TelaPrincipal"
+        Me.Name = "Frm_TelaPrincipal_02"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação - Ola Mundo"
         Me.ResumeLayout(False)
