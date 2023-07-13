@@ -22,18 +22,19 @@ Partial Class Frm_TelaPrincipal_02
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Btm_Principal = New System.Windows.Forms.Button()
+        Me.Btm_NumerosInteiros = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Btm_PontoFlutuante = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Btm_Principal
+        'Btm_NumerosInteiros
         '
-        Me.Btm_Principal.Location = New System.Drawing.Point(12, 29)
-        Me.Btm_Principal.Name = "Btm_Principal"
-        Me.Btm_Principal.Size = New System.Drawing.Size(125, 125)
-        Me.Btm_Principal.TabIndex = 0
-        Me.Btm_Principal.Text = "Clique aqui"
-        Me.Btm_Principal.UseVisualStyleBackColor = True
+        Me.Btm_NumerosInteiros.Location = New System.Drawing.Point(12, 29)
+        Me.Btm_NumerosInteiros.Name = "Btm_NumerosInteiros"
+        Me.Btm_NumerosInteiros.Size = New System.Drawing.Size(125, 125)
+        Me.Btm_NumerosInteiros.TabIndex = 0
+        Me.Btm_NumerosInteiros.Text = "Exemplos Numeros Inteiros"
+        Me.Btm_NumerosInteiros.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -44,13 +45,23 @@ Partial Class Frm_TelaPrincipal_02
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "2 - Criando variaveis"
         '
+        'Btm_PontoFlutuante
+        '
+        Me.Btm_PontoFlutuante.Location = New System.Drawing.Point(143, 29)
+        Me.Btm_PontoFlutuante.Name = "Btm_PontoFlutuante"
+        Me.Btm_PontoFlutuante.Size = New System.Drawing.Size(125, 125)
+        Me.Btm_PontoFlutuante.TabIndex = 3
+        Me.Btm_PontoFlutuante.Text = "Exemplos Pontos Flutuantes"
+        Me.Btm_PontoFlutuante.UseVisualStyleBackColor = True
+        '
         'Frm_TelaPrincipal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.Btm_PontoFlutuante)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Btm_Principal)
+        Me.Controls.Add(Me.Btm_NumerosInteiros)
         Me.Name = "Frm_TelaPrincipal_02"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação - Ola Mundo"
@@ -59,6 +70,7 @@ Partial Class Frm_TelaPrincipal_02
 
     End Sub
 
-    Friend WithEvents Btm_Principal As Button
+    Friend WithEvents Btm_NumerosInteiros As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Btm_PontoFlutuante As Button
 End Class
