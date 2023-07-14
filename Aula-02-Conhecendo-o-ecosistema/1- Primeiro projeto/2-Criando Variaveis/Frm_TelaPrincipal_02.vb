@@ -34,4 +34,15 @@
 
 
     End Sub
+
+    Private Sub Btm_ConversaoNumeros_Click(sender As Object, e As EventArgs) Handles Btm_ConversaoNumeros.Click
+        Dim Salario As Double
+        Salario = 1300.45
+
+        Dim SalarioInteiro As Integer
+        SalarioInteiro = Salario
+
+        MsgBox("O valor do salario inteiro é " + SalarioInteiro.ToString, MsgBoxStyle.Critical)
+
+    End Sub
 End Class

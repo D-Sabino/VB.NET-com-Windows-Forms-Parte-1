@@ -25,6 +25,7 @@ Partial Class Frm_TelaPrincipal_02
         Me.Btm_NumerosInteiros = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btm_PontoFlutuante = New System.Windows.Forms.Button()
+        Me.Btm_ConversaoNumeros = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btm_NumerosInteiros
@@ -54,11 +55,21 @@ Partial Class Frm_TelaPrincipal_02
         Me.Btm_PontoFlutuante.Text = "Exemplos Pontos Flutuantes"
         Me.Btm_PontoFlutuante.UseVisualStyleBackColor = True
         '
+        'Btm_ConversaoNumeros
+        '
+        Me.Btm_ConversaoNumeros.Location = New System.Drawing.Point(274, 29)
+        Me.Btm_ConversaoNumeros.Name = "Btm_ConversaoNumeros"
+        Me.Btm_ConversaoNumeros.Size = New System.Drawing.Size(125, 125)
+        Me.Btm_ConversaoNumeros.TabIndex = 4
+        Me.Btm_ConversaoNumeros.Text = "Exemplos Conversao Numeros"
+        Me.Btm_ConversaoNumeros.UseVisualStyleBackColor = True
+        '
         'Frm_TelaPrincipal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.Btm_ConversaoNumeros)
         Me.Controls.Add(Me.Btm_PontoFlutuante)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btm_NumerosInteiros)
@@ -73,4 +84,5 @@ Partial Class Frm_TelaPrincipal_02
     Friend WithEvents Btm_NumerosInteiros As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Btm_PontoFlutuante As Button
+    Friend WithEvents Btm_ConversaoNumeros As Button
 End Class
