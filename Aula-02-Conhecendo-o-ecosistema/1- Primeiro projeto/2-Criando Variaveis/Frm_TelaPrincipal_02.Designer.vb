@@ -29,6 +29,7 @@ Partial Class Frm_TelaPrincipal_02
         Me.txt_numerador = New System.Windows.Forms.TextBox()
         Me.txt_denominador = New System.Windows.Forms.TextBox()
         Me.btnResultado = New System.Windows.Forms.Button()
+        Me.txt_resultado = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Btm_NumerosInteiros
@@ -90,11 +91,19 @@ Partial Class Frm_TelaPrincipal_02
         Me.btnResultado.Text = "Resultado"
         Me.btnResultado.UseVisualStyleBackColor = True
         '
+        'txt_resultado
+        '
+        Me.txt_resultado.Location = New System.Drawing.Point(536, 85)
+        Me.txt_resultado.Name = "txt_resultado"
+        Me.txt_resultado.Size = New System.Drawing.Size(153, 22)
+        Me.txt_resultado.TabIndex = 8
+        '
         'Frm_TelaPrincipal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 453)
+        Me.Controls.Add(Me.txt_resultado)
         Me.Controls.Add(Me.btnResultado)
         Me.Controls.Add(Me.txt_denominador)
         Me.Controls.Add(Me.txt_numerador)
@@ -117,4 +126,5 @@ Partial Class Frm_TelaPrincipal_02
     Friend WithEvents txt_numerador As TextBox
     Friend WithEvents txt_denominador As TextBox
     Friend WithEvents btnResultado As Button
+    Friend WithEvents txt_resultado As TextBox
 End Class

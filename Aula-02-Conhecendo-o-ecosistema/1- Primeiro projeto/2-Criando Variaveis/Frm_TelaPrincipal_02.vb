@@ -59,5 +59,7 @@
         MsgBox("O resultado entre a divisão de " + numerador.ToString + " por " _
                + denominador.ToString + " é " + resultado.ToString + ".")
 
+        txt_resultado.Text = resultado
+
     End Sub
 End Class
