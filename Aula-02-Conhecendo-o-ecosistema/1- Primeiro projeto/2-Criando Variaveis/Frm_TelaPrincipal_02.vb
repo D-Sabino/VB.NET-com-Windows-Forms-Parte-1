@@ -45,4 +45,19 @@
         MsgBox("O valor do salario inteiro é " + SalarioInteiro.ToString, MsgBoxStyle.Critical)
 
     End Sub
+
+    Private Sub btnResultado_Click(sender As Object, e As EventArgs) Handles btnResultado.Click
+        Dim numerador As Double
+        Dim denominador As Double
+        Dim resultado As Double
+
+        numerador = txt_numerador.Text
+        denominador = txt_denominador.Text
+
+        resultado = numerador / denominador
+
+        MsgBox("O resultado entre a divisão de " + numerador.ToString + " por " _
+               + denominador.ToString + " é " + resultado.ToString + ".")
+
+    End Sub
 End Class

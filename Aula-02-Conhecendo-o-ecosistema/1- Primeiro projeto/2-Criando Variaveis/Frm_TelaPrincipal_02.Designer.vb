@@ -26,6 +26,9 @@ Partial Class Frm_TelaPrincipal_02
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btm_PontoFlutuante = New System.Windows.Forms.Button()
         Me.Btm_ConversaoNumeros = New System.Windows.Forms.Button()
+        Me.txt_numerador = New System.Windows.Forms.TextBox()
+        Me.txt_denominador = New System.Windows.Forms.TextBox()
+        Me.btnResultado = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btm_NumerosInteiros
@@ -64,11 +67,37 @@ Partial Class Frm_TelaPrincipal_02
         Me.Btm_ConversaoNumeros.Text = "Exemplos Conversao Numeros"
         Me.Btm_ConversaoNumeros.UseVisualStyleBackColor = True
         '
+        'txt_numerador
+        '
+        Me.txt_numerador.Location = New System.Drawing.Point(405, 29)
+        Me.txt_numerador.Name = "txt_numerador"
+        Me.txt_numerador.Size = New System.Drawing.Size(284, 22)
+        Me.txt_numerador.TabIndex = 5
+        '
+        'txt_denominador
+        '
+        Me.txt_denominador.Location = New System.Drawing.Point(405, 57)
+        Me.txt_denominador.Name = "txt_denominador"
+        Me.txt_denominador.Size = New System.Drawing.Size(284, 22)
+        Me.txt_denominador.TabIndex = 6
+        '
+        'btnResultado
+        '
+        Me.btnResultado.Location = New System.Drawing.Point(405, 85)
+        Me.btnResultado.Name = "btnResultado"
+        Me.btnResultado.Size = New System.Drawing.Size(125, 69)
+        Me.btnResultado.TabIndex = 7
+        Me.btnResultado.Text = "Resultado"
+        Me.btnResultado.UseVisualStyleBackColor = True
+        '
         'Frm_TelaPrincipal_02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.ClientSize = New System.Drawing.Size(841, 453)
+        Me.Controls.Add(Me.btnResultado)
+        Me.Controls.Add(Me.txt_denominador)
+        Me.Controls.Add(Me.txt_numerador)
         Me.Controls.Add(Me.Btm_ConversaoNumeros)
         Me.Controls.Add(Me.Btm_PontoFlutuante)
         Me.Controls.Add(Me.Label1)
@@ -85,4 +114,7 @@ Partial Class Frm_TelaPrincipal_02
     Friend WithEvents Label1 As Label
     Friend WithEvents Btm_PontoFlutuante As Button
     Friend WithEvents Btm_ConversaoNumeros As Button
+    Friend WithEvents txt_numerador As TextBox
+    Friend WithEvents txt_denominador As TextBox
+    Friend WithEvents btnResultado As Button
 End Class
