@@ -93,6 +93,7 @@ Partial Class Frm_TelaPrincipal_02
         '
         'txt_resultado
         '
+        Me.txt_resultado.Enabled = False
         Me.txt_resultado.Location = New System.Drawing.Point(536, 85)
         Me.txt_resultado.Name = "txt_resultado"
         Me.txt_resultado.Size = New System.Drawing.Size(153, 22)
