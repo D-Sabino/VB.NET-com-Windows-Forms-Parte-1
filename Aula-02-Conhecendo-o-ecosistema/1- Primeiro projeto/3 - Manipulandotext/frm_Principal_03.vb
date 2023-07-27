@@ -14,6 +14,7 @@
         lbl_Curso.Text = "Digite o seu curso favorito"
         btm_adicionar.Text = "Adicione a sua lista"
         btm_MostraLista.Text = "Mostra lista atual"
+        btm_GuardarVariaveis.Text = "Clique aqui"
     End Sub
 
     Private Sub btm_adicionar_Click(sender As Object, e As EventArgs) Handles btm_adicionar.Click
@@ -25,5 +26,15 @@
 
     Private Sub btm_MostraLista_Click(sender As Object, e As EventArgs) Handles btm_MostraLista.Click
         MsgBox(ListaCurso)
+    End Sub
+
+    Private Sub btm_GuardarVariaveis_Click(sender As Object, e As EventArgs) Handles btm_GuardarVariaveis.Click
+        Dim idade As Integer = 32
+        Dim idadeGustavo As Integer
+
+        idadeGustavo = idade
+
+        MsgBox("Idade é igual a " + idade.ToString + " enquanto a idadeGustavo é " + idadeGustavo.ToString)
+
     End Sub
 End Class

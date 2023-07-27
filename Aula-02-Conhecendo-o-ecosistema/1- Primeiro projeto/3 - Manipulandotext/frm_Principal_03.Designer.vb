@@ -29,6 +29,7 @@ Partial Class frm_Principal_03
         Me.btm_adicionar = New System.Windows.Forms.Button()
         Me.txt_lista = New System.Windows.Forms.TextBox()
         Me.btm_MostraLista = New System.Windows.Forms.Button()
+        Me.btm_GuardarVariaveis = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btm_Principal
@@ -92,11 +93,21 @@ Partial Class frm_Principal_03
         Me.btm_MostraLista.Text = "Clique aqui"
         Me.btm_MostraLista.UseVisualStyleBackColor = True
         '
+        'btm_GuardarVariaveis
+        '
+        Me.btm_GuardarVariaveis.Location = New System.Drawing.Point(15, 393)
+        Me.btm_GuardarVariaveis.Name = "btm_GuardarVariaveis"
+        Me.btm_GuardarVariaveis.Size = New System.Drawing.Size(455, 42)
+        Me.btm_GuardarVariaveis.TabIndex = 7
+        Me.btm_GuardarVariaveis.Text = "Clique aqui"
+        Me.btm_GuardarVariaveis.UseVisualStyleBackColor = True
+        '
         'frm_Principal_03
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.btm_GuardarVariaveis)
         Me.Controls.Add(Me.btm_MostraLista)
         Me.Controls.Add(Me.txt_lista)
         Me.Controls.Add(Me.btm_adicionar)
@@ -119,4 +130,5 @@ Partial Class frm_Principal_03
     Friend WithEvents btm_adicionar As Button
     Friend WithEvents txt_lista As TextBox
     Friend WithEvents btm_MostraLista As Button
+    Friend WithEvents btm_GuardarVariaveis As Button
 End Class
