@@ -27,11 +27,12 @@
         Dim acompanhadoPais As String
         acompanhadoPais = txt_pais.Text
 
-        If (idade >= 18) Then
+        Dim PodeEntrar As Boolean = (idade >= 18) Or (acompanhadoPais = "S" And idade >= 16)
+        Dim NaoPodeEntrar As Boolean = (acompanhadoPais = "N" And idade >= 16) Or (idade < 16)
+
+        If PodeEntrar Then
             txt_resultado.Text = "A pessoa pode assistir a peça."
-        ElseIf acompanhadoPais = "S" And idade >= 16 Then
-            txt_resultado.Text = "A pessoa pode assistir a peça."
-        Else
+        ElseIf NaoPodeEntrar Then
             txt_resultado.Text = "A pessoa não pode assistir a peça."
         End If
 
