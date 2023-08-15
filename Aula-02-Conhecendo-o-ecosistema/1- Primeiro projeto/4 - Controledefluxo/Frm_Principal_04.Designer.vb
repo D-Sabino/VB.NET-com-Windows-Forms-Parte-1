@@ -28,13 +28,15 @@ Partial Class Frm_Principal_04
         Me.txt_idade = New System.Windows.Forms.TextBox()
         Me.txt_resultado = New System.Windows.Forms.TextBox()
         Me.lbl_resultado = New System.Windows.Forms.Label()
-        Me.lbl_pais = New System.Windows.Forms.Label()
-        Me.txt_pais = New System.Windows.Forms.TextBox()
+        Me.grp_pais = New System.Windows.Forms.GroupBox()
+        Me.Rdb_Sim = New System.Windows.Forms.RadioButton()
+        Me.Rdb_Nao = New System.Windows.Forms.RadioButton()
+        Me.grp_pais.SuspendLayout()
         Me.SuspendLayout()
         '
         'Btm_Principal
         '
-        Me.Btm_Principal.Location = New System.Drawing.Point(15, 74)
+        Me.Btm_Principal.Location = New System.Drawing.Point(15, 108)
         Me.Btm_Principal.Name = "Btm_Principal"
         Me.Btm_Principal.Size = New System.Drawing.Size(308, 72)
         Me.Btm_Principal.TabIndex = 0
@@ -63,7 +65,7 @@ Partial Class Frm_Principal_04
         '
         Me.txt_idade.Location = New System.Drawing.Point(15, 46)
         Me.txt_idade.Name = "txt_idade"
-        Me.txt_idade.Size = New System.Drawing.Size(100, 22)
+        Me.txt_idade.Size = New System.Drawing.Size(112, 22)
         Me.txt_idade.TabIndex = 3
         '
         'txt_resultado
@@ -82,29 +84,45 @@ Partial Class Frm_Principal_04
         Me.lbl_resultado.TabIndex = 5
         Me.lbl_resultado.Text = "Label1"
         '
-        'lbl_pais
+        'grp_pais
         '
-        Me.lbl_pais.AutoSize = True
-        Me.lbl_pais.Location = New System.Drawing.Point(118, 26)
-        Me.lbl_pais.Name = "lbl_pais"
-        Me.lbl_pais.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_pais.TabIndex = 6
-        Me.lbl_pais.Text = "Label1"
+        Me.grp_pais.Controls.Add(Me.Rdb_Nao)
+        Me.grp_pais.Controls.Add(Me.Rdb_Sim)
+        Me.grp_pais.Location = New System.Drawing.Point(133, 26)
+        Me.grp_pais.Name = "grp_pais"
+        Me.grp_pais.Size = New System.Drawing.Size(200, 76)
+        Me.grp_pais.TabIndex = 6
+        Me.grp_pais.TabStop = False
+        Me.grp_pais.Text = "GroupBox1"
         '
-        'txt_pais
+        'Rdb_Sim
         '
-        Me.txt_pais.Location = New System.Drawing.Point(121, 46)
-        Me.txt_pais.Name = "txt_pais"
-        Me.txt_pais.Size = New System.Drawing.Size(100, 22)
-        Me.txt_pais.TabIndex = 7
+        Me.Rdb_Sim.AutoSize = True
+        Me.Rdb_Sim.Location = New System.Drawing.Point(6, 21)
+        Me.Rdb_Sim.Name = "Rdb_Sim"
+        Me.Rdb_Sim.Size = New System.Drawing.Size(115, 21)
+        Me.Rdb_Sim.TabIndex = 7
+        Me.Rdb_Sim.TabStop = True
+        Me.Rdb_Sim.Text = "RadioButton1"
+        Me.Rdb_Sim.UseVisualStyleBackColor = True
+        '
+        'Rdb_Nao
+        '
+        Me.Rdb_Nao.AutoSize = True
+        Me.Rdb_Nao.Location = New System.Drawing.Point(6, 48)
+        Me.Rdb_Nao.Name = "Rdb_Nao"
+        Me.Rdb_Nao.Size = New System.Drawing.Size(115, 21)
+        Me.Rdb_Nao.TabIndex = 8
+        Me.Rdb_Nao.TabStop = True
+        Me.Rdb_Nao.Text = "RadioButton1"
+        Me.Rdb_Nao.UseVisualStyleBackColor = True
         '
         'Frm_Principal_04
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
-        Me.Controls.Add(Me.txt_pais)
-        Me.Controls.Add(Me.lbl_pais)
+        Me.Controls.Add(Me.grp_pais)
         Me.Controls.Add(Me.lbl_resultado)
         Me.Controls.Add(Me.txt_resultado)
         Me.Controls.Add(Me.txt_idade)
@@ -114,6 +132,8 @@ Partial Class Frm_Principal_04
         Me.Name = "Frm_Principal_04"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação - Ola Mundo"
+        Me.grp_pais.ResumeLayout(False)
+        Me.grp_pais.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -127,4 +147,7 @@ Partial Class Frm_Principal_04
     Friend WithEvents lbl_resultado As Label
     Friend WithEvents lbl_pais As Label
     Friend WithEvents txt_pais As TextBox
+    Friend WithEvents grp_pais As GroupBox
+    Friend WithEvents Rdb_Sim As RadioButton
+    Friend WithEvents Rdb_Nao As RadioButton
 End Class

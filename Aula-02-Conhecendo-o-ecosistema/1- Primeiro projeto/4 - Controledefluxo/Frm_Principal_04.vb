@@ -11,10 +11,9 @@
 
         lbl_idade.Text = "Idade"
         lbl_resultado.Text = "Resultado"
-        lbl_pais.Text = "Esta acompanhado dos pais? S ou N"
-    End Sub
-
-    Private Sub Frm_Principal_04_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        grp_pais.Text = "Acompanhado dos pais?"
+        Rdb_Sim.Text = "Sim"
+        Rdb_Nao.Text = "Não"
 
     End Sub
 
@@ -25,7 +24,11 @@
         idade = txt_idade.Text
 
         Dim acompanhadoPais As String
-        acompanhadoPais = txt_pais.Text
+        If Rdb_Sim.Checked Then
+            acompanhadoPais = "S"
+        Else
+            acompanhadoPais = "N"
+        End If
 
         Dim PodeEntrar As Boolean = (idade >= 18) Or (acompanhadoPais = "S" And idade >= 16)
         Dim NaoPodeEntrar As Boolean = (acompanhadoPais = "N" And idade >= 16) Or (idade < 16)
@@ -38,9 +41,11 @@
         End If
 
         If PodeEntrar Then
+            txt_resultado.ForeColor = Color.Green
             txt_resultado.Text = "A pessoa pode assistir a peça." + MensagemAdicional
         ElseIf NaoPodeEntrar Then
-            txt_resultado.Text = "A pessoa não pode assistir a peça."
+            txt_resultado.ForeColor = Color.Red
+            txt_resultado.Text = "A pessoa não pode assistir a peça." + MensagemAdicional
         End If
 
     End Sub
