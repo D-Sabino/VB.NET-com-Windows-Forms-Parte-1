@@ -28,6 +28,8 @@ Partial Class Frm_Principal_05
         Me.lbl_rendimento = New System.Windows.Forms.Label()
         Me.Txt_Principal = New System.Windows.Forms.TextBox()
         Me.Txt_Rendimento = New System.Windows.Forms.TextBox()
+        Me.Lbl_Periodos = New System.Windows.Forms.Label()
+        Me.Txt_Periodos = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Btm_Principal
@@ -80,11 +82,29 @@ Partial Class Frm_Principal_05
         Me.Txt_Rendimento.Size = New System.Drawing.Size(100, 22)
         Me.Txt_Rendimento.TabIndex = 5
         '
+        'Lbl_Periodos
+        '
+        Me.Lbl_Periodos.AutoSize = True
+        Me.Lbl_Periodos.Location = New System.Drawing.Point(342, 26)
+        Me.Lbl_Periodos.Name = "Lbl_Periodos"
+        Me.Lbl_Periodos.Size = New System.Drawing.Size(51, 17)
+        Me.Lbl_Periodos.TabIndex = 6
+        Me.Lbl_Periodos.Text = "Label3"
+        '
+        'Txt_Periodos
+        '
+        Me.Txt_Periodos.Location = New System.Drawing.Point(345, 46)
+        Me.Txt_Periodos.Name = "Txt_Periodos"
+        Me.Txt_Periodos.Size = New System.Drawing.Size(100, 22)
+        Me.Txt_Periodos.TabIndex = 7
+        '
         'Frm_Principal_05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.Txt_Periodos)
+        Me.Controls.Add(Me.Lbl_Periodos)
         Me.Controls.Add(Me.Txt_Rendimento)
         Me.Controls.Add(Me.Txt_Principal)
         Me.Controls.Add(Me.lbl_rendimento)
@@ -105,4 +125,6 @@ Partial Class Frm_Principal_05
     Friend WithEvents lbl_rendimento As Label
     Friend WithEvents Txt_Principal As TextBox
     Friend WithEvents Txt_Rendimento As TextBox
+    Friend WithEvents Lbl_Periodos As Label
+    Friend WithEvents Txt_Periodos As TextBox
 End Class
