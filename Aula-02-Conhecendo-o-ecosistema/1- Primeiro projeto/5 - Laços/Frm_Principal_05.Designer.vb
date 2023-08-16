@@ -26,6 +26,8 @@ Partial Class Frm_Principal_05
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_Principal = New System.Windows.Forms.Label()
         Me.lbl_rendimento = New System.Windows.Forms.Label()
+        Me.Txt_Principal = New System.Windows.Forms.TextBox()
+        Me.Txt_Rendimento = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Btm_Principal
@@ -64,11 +66,27 @@ Partial Class Frm_Principal_05
         Me.lbl_rendimento.TabIndex = 3
         Me.lbl_rendimento.Text = "Label3"
         '
+        'Txt_Principal
+        '
+        Me.Txt_Principal.Location = New System.Drawing.Point(15, 46)
+        Me.Txt_Principal.Name = "Txt_Principal"
+        Me.Txt_Principal.Size = New System.Drawing.Size(100, 22)
+        Me.Txt_Principal.TabIndex = 4
+        '
+        'Txt_Rendimento
+        '
+        Me.Txt_Rendimento.Location = New System.Drawing.Point(204, 46)
+        Me.Txt_Rendimento.Name = "Txt_Rendimento"
+        Me.Txt_Rendimento.Size = New System.Drawing.Size(100, 22)
+        Me.Txt_Rendimento.TabIndex = 5
+        '
         'Frm_Principal_05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.Txt_Rendimento)
+        Me.Controls.Add(Me.Txt_Principal)
         Me.Controls.Add(Me.lbl_rendimento)
         Me.Controls.Add(Me.lbl_Principal)
         Me.Controls.Add(Me.Label1)
@@ -85,4 +103,6 @@ Partial Class Frm_Principal_05
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_Principal As Label
     Friend WithEvents lbl_rendimento As Label
+    Friend WithEvents Txt_Principal As TextBox
+    Friend WithEvents Txt_Rendimento As TextBox
 End Class
