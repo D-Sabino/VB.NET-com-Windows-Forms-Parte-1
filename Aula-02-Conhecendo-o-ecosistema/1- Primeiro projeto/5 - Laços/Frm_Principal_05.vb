@@ -57,4 +57,21 @@
         Next
         txtResultado.Text = extrato
     End Sub
+
+    Private Sub BtmTabuada_Click(sender As Object, e As EventArgs) Handles BtmTabuada.Click
+        Dim tabuada As String = ""
+        Dim multiplicacao As Integer = 1
+
+        For i As Integer = 1 To 3
+            For j As Integer = 1 To 10
+                multiplicacao = i * j
+                tabuada = tabuada + "O numero " + i.ToString + " X " + j.ToString + " é " + multiplicacao.ToString + vbCrLf
+            Next
+            tabuada = tabuada + vbCrLf
+
+        Next
+
+        MsgBox(tabuada)
+
+    End Sub
 End Class

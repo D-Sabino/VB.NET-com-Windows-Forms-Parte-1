@@ -42,6 +42,7 @@ Partial Class Frm_Principal_05
         Me.lbl_acrescimo_rendimento = New System.Windows.Forms.Label()
         Me.btm_calcula = New System.Windows.Forms.Button()
         Me.txtResultado = New System.Windows.Forms.TextBox()
+        Me.BtmTabuada = New System.Windows.Forms.Button()
         Me.Grp_Grupo1.SuspendLayout()
         Me.Grp_Grupo2.SuspendLayout()
         Me.SuspendLayout()
@@ -142,7 +143,7 @@ Partial Class Frm_Principal_05
         Me.Grp_Grupo2.Controls.Add(Me.lbl_Principal2)
         Me.Grp_Grupo2.Location = New System.Drawing.Point(15, 164)
         Me.Grp_Grupo2.Name = "Grp_Grupo2"
-        Me.Grp_Grupo2.Size = New System.Drawing.Size(446, 277)
+        Me.Grp_Grupo2.Size = New System.Drawing.Size(446, 238)
         Me.Grp_Grupo2.TabIndex = 9
         Me.Grp_Grupo2.TabStop = False
         Me.Grp_Grupo2.Text = "GroupBox1"
@@ -229,11 +230,21 @@ Partial Class Frm_Principal_05
         Me.txtResultado.Size = New System.Drawing.Size(416, 112)
         Me.txtResultado.TabIndex = 9
         '
+        'BtmTabuada
+        '
+        Me.BtmTabuada.Location = New System.Drawing.Point(22, 408)
+        Me.BtmTabuada.Name = "BtmTabuada"
+        Me.BtmTabuada.Size = New System.Drawing.Size(415, 43)
+        Me.BtmTabuada.TabIndex = 10
+        Me.BtmTabuada.Text = "Tabuada (exercicio extra)"
+        Me.BtmTabuada.UseVisualStyleBackColor = True
+        '
         'Frm_Principal_05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.BtmTabuada)
         Me.Controls.Add(Me.Grp_Grupo2)
         Me.Controls.Add(Me.Grp_Grupo1)
         Me.Controls.Add(Me.Label1)
@@ -269,4 +280,5 @@ Partial Class Frm_Principal_05
     Friend WithEvents lbl_Principal2 As Label
     Friend WithEvents btm_calcula As Button
     Friend WithEvents txtResultado As TextBox
+    Friend WithEvents BtmTabuada As Button
 End Class
