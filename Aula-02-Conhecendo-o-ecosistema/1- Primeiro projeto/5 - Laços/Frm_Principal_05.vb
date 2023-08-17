@@ -12,6 +12,14 @@
         Lbl_Periodos.Text = "Periodos"
 
         Btm_Principal.Text = "Calcular valor"
+
+        Grp_Grupo1.Text = "Calculo do investimento..."
+        Grp_Grupo2.Text = "Calculo do investimento anual"
+        lbl_Principal2.Text = "Valor investido"
+        Lbl_Rendimento2.Text = "Juros mensais(%)"
+        Lbl_Anos.Text = "Anos aplicados"
+        lbl_acrescimo_rendimento.Text = "Acrescimo Juros (%)"
+        btm_calcula.Text = "Efetua calculo"
     End Sub
 
     Private Sub Btm_Principal_Click(sender As Object, e As EventArgs) Handles Btm_Principal.Click
@@ -27,5 +35,26 @@
         End While
 
         MsgBox("O valor apos o rendimento é: " + investimento.ToString + " apos " + periodos.ToString + " meses")
+    End Sub
+
+    Private Sub btm_calcula_Click(sender As Object, e As EventArgs) Handles btm_calcula.Click
+        Dim investimento As Double = Val(Txt_Principal2.Text)
+        Dim rendimento As Double = Val(Txt_Rendimento2.Text)
+        Dim anos As Double = Val(txt_Anos.Text)
+        Dim acrescimosJuros As Double = Val(txt_acrescimo_rendimento.Text)
+        Dim extrato As String = ""
+        Dim contador As Integer = 1
+
+        For i As Integer = 1 To anos
+            For j As Integer = 1 To 12
+                investimento = (investimento + (investimento * (rendimento / 100)))
+                extrato += "O saldo do investimento no mes " + contador.ToString + " é " + investimento.ToString + " usando a taxa " +
+                            rendimento.ToString + "% mes" + vbCrLf
+                contador += 1
+            Next
+
+            rendimento = rendimento + (rendimento * acrescimosJuros / 100)
+        Next
+        txtResultado.Text = extrato
     End Sub
 End Class
