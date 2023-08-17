@@ -32,17 +32,19 @@ Partial Class Frm_Principal_05
         Me.Txt_Periodos = New System.Windows.Forms.TextBox()
         Me.Grp_Grupo1 = New System.Windows.Forms.GroupBox()
         Me.Grp_Grupo2 = New System.Windows.Forms.GroupBox()
-        Me.lbl_Principal2 = New System.Windows.Forms.Label()
-        Me.Txt_Principal2 = New System.Windows.Forms.TextBox()
-        Me.Txt_Rendimento2 = New System.Windows.Forms.TextBox()
-        Me.Lbl_Rendimento2 = New System.Windows.Forms.Label()
-        Me.txt_Anos = New System.Windows.Forms.TextBox()
-        Me.Lbl_Anos = New System.Windows.Forms.Label()
+        Me.txtResultado = New System.Windows.Forms.TextBox()
+        Me.btm_calcula = New System.Windows.Forms.Button()
         Me.txt_acrescimo_rendimento = New System.Windows.Forms.TextBox()
         Me.lbl_acrescimo_rendimento = New System.Windows.Forms.Label()
-        Me.btm_calcula = New System.Windows.Forms.Button()
-        Me.txtResultado = New System.Windows.Forms.TextBox()
+        Me.txt_Anos = New System.Windows.Forms.TextBox()
+        Me.Lbl_Anos = New System.Windows.Forms.Label()
+        Me.Txt_Rendimento2 = New System.Windows.Forms.TextBox()
+        Me.Lbl_Rendimento2 = New System.Windows.Forms.Label()
+        Me.Txt_Principal2 = New System.Windows.Forms.TextBox()
+        Me.lbl_Principal2 = New System.Windows.Forms.Label()
         Me.BtmTabuada = New System.Windows.Forms.Button()
+        Me.Lbl_limite = New System.Windows.Forms.Label()
+        Me.txt_limite = New System.Windows.Forms.TextBox()
         Me.Grp_Grupo1.SuspendLayout()
         Me.Grp_Grupo2.SuspendLayout()
         Me.SuspendLayout()
@@ -124,13 +126,15 @@ Partial Class Frm_Principal_05
         Me.Grp_Grupo1.Controls.Add(Me.Txt_Principal)
         Me.Grp_Grupo1.Location = New System.Drawing.Point(15, 29)
         Me.Grp_Grupo1.Name = "Grp_Grupo1"
-        Me.Grp_Grupo1.Size = New System.Drawing.Size(446, 129)
+        Me.Grp_Grupo1.Size = New System.Drawing.Size(537, 129)
         Me.Grp_Grupo1.TabIndex = 8
         Me.Grp_Grupo1.TabStop = False
         Me.Grp_Grupo1.Text = "GroupBox1"
         '
         'Grp_Grupo2
         '
+        Me.Grp_Grupo2.Controls.Add(Me.txt_limite)
+        Me.Grp_Grupo2.Controls.Add(Me.Lbl_limite)
         Me.Grp_Grupo2.Controls.Add(Me.txtResultado)
         Me.Grp_Grupo2.Controls.Add(Me.btm_calcula)
         Me.Grp_Grupo2.Controls.Add(Me.txt_acrescimo_rendimento)
@@ -143,58 +147,28 @@ Partial Class Frm_Principal_05
         Me.Grp_Grupo2.Controls.Add(Me.lbl_Principal2)
         Me.Grp_Grupo2.Location = New System.Drawing.Point(15, 164)
         Me.Grp_Grupo2.Name = "Grp_Grupo2"
-        Me.Grp_Grupo2.Size = New System.Drawing.Size(446, 238)
+        Me.Grp_Grupo2.Size = New System.Drawing.Size(537, 238)
         Me.Grp_Grupo2.TabIndex = 9
         Me.Grp_Grupo2.TabStop = False
         Me.Grp_Grupo2.Text = "GroupBox1"
         '
-        'lbl_Principal2
+        'txtResultado
         '
-        Me.lbl_Principal2.AutoSize = True
-        Me.lbl_Principal2.Location = New System.Drawing.Point(3, 18)
-        Me.lbl_Principal2.Name = "lbl_Principal2"
-        Me.lbl_Principal2.Size = New System.Drawing.Size(51, 17)
-        Me.lbl_Principal2.TabIndex = 0
-        Me.lbl_Principal2.Text = "Label2"
+        Me.txtResultado.Location = New System.Drawing.Point(6, 115)
+        Me.txtResultado.Multiline = True
+        Me.txtResultado.Name = "txtResultado"
+        Me.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtResultado.Size = New System.Drawing.Size(522, 112)
+        Me.txtResultado.TabIndex = 9
         '
-        'Txt_Principal2
+        'btm_calcula
         '
-        Me.Txt_Principal2.Location = New System.Drawing.Point(6, 38)
-        Me.Txt_Principal2.Name = "Txt_Principal2"
-        Me.Txt_Principal2.Size = New System.Drawing.Size(100, 22)
-        Me.Txt_Principal2.TabIndex = 1
-        '
-        'Txt_Rendimento2
-        '
-        Me.Txt_Rendimento2.Location = New System.Drawing.Point(112, 38)
-        Me.Txt_Rendimento2.Name = "Txt_Rendimento2"
-        Me.Txt_Rendimento2.Size = New System.Drawing.Size(100, 22)
-        Me.Txt_Rendimento2.TabIndex = 3
-        '
-        'Lbl_Rendimento2
-        '
-        Me.Lbl_Rendimento2.AutoSize = True
-        Me.Lbl_Rendimento2.Location = New System.Drawing.Point(109, 18)
-        Me.Lbl_Rendimento2.Name = "Lbl_Rendimento2"
-        Me.Lbl_Rendimento2.Size = New System.Drawing.Size(51, 17)
-        Me.Lbl_Rendimento2.TabIndex = 2
-        Me.Lbl_Rendimento2.Text = "Label3"
-        '
-        'txt_Anos
-        '
-        Me.txt_Anos.Location = New System.Drawing.Point(218, 38)
-        Me.txt_Anos.Name = "txt_Anos"
-        Me.txt_Anos.Size = New System.Drawing.Size(100, 22)
-        Me.txt_Anos.TabIndex = 5
-        '
-        'Lbl_Anos
-        '
-        Me.Lbl_Anos.AutoSize = True
-        Me.Lbl_Anos.Location = New System.Drawing.Point(215, 18)
-        Me.Lbl_Anos.Name = "Lbl_Anos"
-        Me.Lbl_Anos.Size = New System.Drawing.Size(51, 17)
-        Me.Lbl_Anos.TabIndex = 4
-        Me.Lbl_Anos.Text = "Label4"
+        Me.btm_calcula.Location = New System.Drawing.Point(7, 66)
+        Me.btm_calcula.Name = "btm_calcula"
+        Me.btm_calcula.Size = New System.Drawing.Size(521, 43)
+        Me.btm_calcula.TabIndex = 8
+        Me.btm_calcula.Text = "Clique aqui"
+        Me.btm_calcula.UseVisualStyleBackColor = True
         '
         'txt_acrescimo_rendimento
         '
@@ -212,38 +186,84 @@ Partial Class Frm_Principal_05
         Me.lbl_acrescimo_rendimento.TabIndex = 6
         Me.lbl_acrescimo_rendimento.Text = "Label5"
         '
-        'btm_calcula
+        'txt_Anos
         '
-        Me.btm_calcula.Location = New System.Drawing.Point(7, 66)
-        Me.btm_calcula.Name = "btm_calcula"
-        Me.btm_calcula.Size = New System.Drawing.Size(415, 43)
-        Me.btm_calcula.TabIndex = 8
-        Me.btm_calcula.Text = "Clique aqui"
-        Me.btm_calcula.UseVisualStyleBackColor = True
+        Me.txt_Anos.Location = New System.Drawing.Point(218, 38)
+        Me.txt_Anos.Name = "txt_Anos"
+        Me.txt_Anos.Size = New System.Drawing.Size(100, 22)
+        Me.txt_Anos.TabIndex = 5
         '
-        'txtResultado
+        'Lbl_Anos
         '
-        Me.txtResultado.Location = New System.Drawing.Point(6, 115)
-        Me.txtResultado.Multiline = True
-        Me.txtResultado.Name = "txtResultado"
-        Me.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtResultado.Size = New System.Drawing.Size(416, 112)
-        Me.txtResultado.TabIndex = 9
+        Me.Lbl_Anos.AutoSize = True
+        Me.Lbl_Anos.Location = New System.Drawing.Point(215, 18)
+        Me.Lbl_Anos.Name = "Lbl_Anos"
+        Me.Lbl_Anos.Size = New System.Drawing.Size(51, 17)
+        Me.Lbl_Anos.TabIndex = 4
+        Me.Lbl_Anos.Text = "Label4"
+        '
+        'Txt_Rendimento2
+        '
+        Me.Txt_Rendimento2.Location = New System.Drawing.Point(112, 38)
+        Me.Txt_Rendimento2.Name = "Txt_Rendimento2"
+        Me.Txt_Rendimento2.Size = New System.Drawing.Size(100, 22)
+        Me.Txt_Rendimento2.TabIndex = 3
+        '
+        'Lbl_Rendimento2
+        '
+        Me.Lbl_Rendimento2.AutoSize = True
+        Me.Lbl_Rendimento2.Location = New System.Drawing.Point(109, 18)
+        Me.Lbl_Rendimento2.Name = "Lbl_Rendimento2"
+        Me.Lbl_Rendimento2.Size = New System.Drawing.Size(51, 17)
+        Me.Lbl_Rendimento2.TabIndex = 2
+        Me.Lbl_Rendimento2.Text = "Label3"
+        '
+        'Txt_Principal2
+        '
+        Me.Txt_Principal2.Location = New System.Drawing.Point(6, 38)
+        Me.Txt_Principal2.Name = "Txt_Principal2"
+        Me.Txt_Principal2.Size = New System.Drawing.Size(100, 22)
+        Me.Txt_Principal2.TabIndex = 1
+        '
+        'lbl_Principal2
+        '
+        Me.lbl_Principal2.AutoSize = True
+        Me.lbl_Principal2.Location = New System.Drawing.Point(3, 18)
+        Me.lbl_Principal2.Name = "lbl_Principal2"
+        Me.lbl_Principal2.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_Principal2.TabIndex = 0
+        Me.lbl_Principal2.Text = "Label2"
         '
         'BtmTabuada
         '
-        Me.BtmTabuada.Location = New System.Drawing.Point(22, 408)
+        Me.BtmTabuada.Location = New System.Drawing.Point(15, 408)
         Me.BtmTabuada.Name = "BtmTabuada"
-        Me.BtmTabuada.Size = New System.Drawing.Size(415, 43)
+        Me.BtmTabuada.Size = New System.Drawing.Size(537, 43)
         Me.BtmTabuada.TabIndex = 10
         Me.BtmTabuada.Text = "Tabuada (exercicio extra)"
         Me.BtmTabuada.UseVisualStyleBackColor = True
+        '
+        'Lbl_limite
+        '
+        Me.Lbl_limite.AutoSize = True
+        Me.Lbl_limite.Location = New System.Drawing.Point(425, 18)
+        Me.Lbl_limite.Name = "Lbl_limite"
+        Me.Lbl_limite.Size = New System.Drawing.Size(51, 17)
+        Me.Lbl_limite.TabIndex = 10
+        Me.Lbl_limite.Text = "Label5"
+        '
+        'txt_limite
+        '
+        Me.txt_limite.Location = New System.Drawing.Point(428, 38)
+        Me.txt_limite.Name = "txt_limite"
+        Me.txt_limite.Size = New System.Drawing.Size(100, 22)
+        Me.txt_limite.TabIndex = 11
         '
         'Frm_Principal_05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.ClientSize = New System.Drawing.Size(559, 453)
         Me.Controls.Add(Me.BtmTabuada)
         Me.Controls.Add(Me.Grp_Grupo2)
         Me.Controls.Add(Me.Grp_Grupo1)
@@ -281,4 +301,6 @@ Partial Class Frm_Principal_05
     Friend WithEvents btm_calcula As Button
     Friend WithEvents txtResultado As TextBox
     Friend WithEvents BtmTabuada As Button
+    Friend WithEvents txt_limite As TextBox
+    Friend WithEvents Lbl_limite As Label
 End Class

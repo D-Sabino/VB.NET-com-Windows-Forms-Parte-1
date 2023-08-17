@@ -20,6 +20,7 @@
         Lbl_Anos.Text = "Anos aplicados"
         lbl_acrescimo_rendimento.Text = "Acrescimo Juros (%)"
         btm_calcula.Text = "Efetua calculo"
+        Lbl_limite = "Limite"
     End Sub
 
     Private Sub Btm_Principal_Click(sender As Object, e As EventArgs) Handles Btm_Principal.Click
@@ -44,15 +45,26 @@
         Dim acrescimosJuros As Double = Val(txt_acrescimo_rendimento.Text)
         Dim extrato As String = ""
         Dim contador As Integer = 1
+        Dim limite As Double = Val(txt_limite.Text)
+        Dim ExecutouExitFor As Boolean
 
         For i As Integer = 1 To anos
             For j As Integer = 1 To 12
                 investimento = (investimento + (investimento * (rendimento / 100)))
                 extrato += "O saldo do investimento no mes " + contador.ToString + " é " + investimento.ToString + " usando a taxa " +
                             rendimento.ToString + "% mes" + vbCrLf
+
+                If investimento >= limite Then
+                    ExecutouExitFor = True
+                    extrato += "O investimento atingiu o limite." + vbCrLf
+                    Exit For
+                End If
+
                 contador += 1
             Next
-
+            If ExecutouExitFor Then
+                Exit For
+            End If
             rendimento = rendimento + (rendimento * acrescimosJuros / 100)
         Next
         txtResultado.Text = extrato
