@@ -20,7 +20,7 @@
         Lbl_Anos.Text = "Anos aplicados"
         lbl_acrescimo_rendimento.Text = "Acrescimo Juros (%)"
         btm_calcula.Text = "Efetua calculo"
-        Lbl_limite = "Limite"
+        Lbl_limite.Text = "Limite"
     End Sub
 
     Private Sub Btm_Principal_Click(sender As Object, e As EventArgs) Handles Btm_Principal.Click

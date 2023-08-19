@@ -1,4 +1,4 @@
-﻿Public Class Frm_TelaPrincipal
+﻿Public Class Frm_Principal_01
     Public Sub New()
 
         ' Esta chamada é requerida pelo designer.
